@@ -7,8 +7,8 @@ const app = express();
 
 const port = config.server.port;
 
-app.listen(port, async () => {
-	await mongodbInit();
+app.listen(port, () => {
+	mongodbInit();
 
 	console.log(`Server is listening on port: ${port}`);
 });
